@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #wrapper {
+            heght: 200px;
+            width: 450px;
+            border: 1px solid black;
+            sargin: auto;
+        }
+        #left{
+            width: 220px;
+            float: left;
+            border: 1px solid blue;
+            padding: 4px;
+        }
+        #left form input{
+            margin-bottom: 4px;
+        }
+        #right{
+            width: 180px;
+            float: left;
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+<h1>Dette er min index side</h1>
+<div id="wrapper" >
+   <div id="left">
+       <form action="/personData" method="post">
+           <label>First name </label>
+           <input type="text" name="first_name" placeholder="First name">
+           <label>Last name </label>
+           <input type="text" name="last_name" placeholder="Last name">
+           <input type="submit" value="Send data"style="color:green">
+       </form>
+
+   </div>
+     <div id="right">
+         <input type="checkbox" name="Vivhicle 1" value="Bike">I have a bike<br>
+         <input type="checkbox" name="Vivhicle 1" value="Bike">I have a bike<br>
+         <input type="checkbox" name="Vivhicle 1" value="Bike" checked="checked" > I have a bike<br>
+    </div>
+
+</div>
+</body>
+<html/>
